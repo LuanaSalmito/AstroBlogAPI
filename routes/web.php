@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BlogPostController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +20,6 @@ Route::get('/hello', function () {
     return "hello";
 });
 
-Route::get('/blog_posts', [BlogPostController::class, 'index']);
+Route::get('/blog_posts', 'App\Http\Controllers\BlogPostController@index');
 
-Route::post('/blog_posts', [BlogPostController::class, 'store']);
+Route::post('/blog_posts', 'App\Http\Controllers\BlogPostController@store');
