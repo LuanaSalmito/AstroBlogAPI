@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\BlogPost;
 
-class BlogPostController extends Controller
+class BlogPostsController extends Controller
 {
     public function index()
     {
