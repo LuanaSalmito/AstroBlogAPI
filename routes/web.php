@@ -20,6 +20,6 @@ Route::get('/hello', function () {
     return "hello";
 });
 
-Route::get('/blog_posts', 'App\Http\Controllers\BlogPostController@index');
+Route::get('/blog_posts', 'App\Http\Controllers\BlogPostsController@index');
 
-Route::post('/blog_posts', 'App\Http\Controllers\BlogPostController@store');
+Route::post('/blog_posts', 'App\Http\Controllers\BlogPostsController@store');
