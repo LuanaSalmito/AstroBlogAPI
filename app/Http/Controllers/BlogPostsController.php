@@ -19,7 +19,8 @@ class BlogPostsController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:255',
-            'content' => 'required',
+            'cd ..
+            ' => 'required',
         ]);
 
         $post = BlogPost::create($validatedData);
